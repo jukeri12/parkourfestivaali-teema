@@ -12,3 +12,60 @@
  Text Domain:  twentytwenty
 */
 
+/* FONTS BOF */
+/* TODO: We might be better off using a font plugin or similar */
+@font-face {
+	font-family: hussar;
+	src: 'assets/fonts/hussar-szturm-font/HussarSzturmAlxg.otf';
+}
+@font-face {
+	font-family: rocketfuel;
+	src: 'assets/fonts/rocketfuel-font/Rocketfuel-mD2P.otf';
+}
+@font-face {
+	font-family: applestorm-regular;
+	src: 'assets/fonts/applestorm-font/ApplestormRegularW909.otf';
+}
+
+/* FONTS EOF */
+
+/* TEXT BASE BOF */
+
+p {
+	color: white;
+}
+.widget_text p {
+	font-family: hussar;
+}
+
+/* TEXT BASE EOF */
+
+
+/* NAVIGATION BOF */
+/* TODO: Make header navigation color adjustable from theme settings */
+#site-header {
+	max-height: 90px;
+}
+#site-header {
+	background-color: #ff6600ff;
+}
+#site-header p {
+	font-family: rocketfuel;
+	color: white;
+}
+#site-header a {
+	font-family: rocketfuel;
+	color: white;
+}
+#site-header h2 {
+	font-family: rocketfuel;
+	color: white;
+}
+
+/* NAVIGATION EOF */
+
+/* FOOTER BOF */
+.footer-nav-widgets-wrapper.header-footer-group {
+	background-color: #333;
+}
+/* FOOTER EOF */

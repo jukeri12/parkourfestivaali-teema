@@ -60,6 +60,8 @@
 		if ( is_single() ) {
 
 			get_template_part( 'template-parts/entry-author-bio' );
+			// Add sidebar menu
+			wp_nav_menu( array( 'theme_location' => 'info-page-sidebar-menu' ) );
 
 		}
 		?>

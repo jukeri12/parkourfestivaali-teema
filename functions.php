@@ -8,7 +8,8 @@
  * 
  */
 add_action( 'wp_enqueue_scripts', 'parkour_festivaali_enqueue_styles' );
-add_action( 'widgets_init', 'hero_widgets_init');
+add_action( 'widgets_init', 'parkour_festivaali_widgets_init');
+add_action( 'init', 'parkour_festivaali_menus_init' );
 function parkour_festivaali_enqueue_styles() {
 
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
@@ -18,7 +19,7 @@ function parkour_festivaali_enqueue_styles() {
 		wp_get_theme()->get('Version')
 	);
 }
-function hero_widgets_init() {
+function parkour_festivaali_widgets_init() {
     register_sidebar( array(
         'name'          => 'Hero Widget Area',
         'id'            => 'hero-widget-area',
@@ -26,5 +27,10 @@ function hero_widgets_init() {
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="hero-title">',
         'after_title'   => '</h2>',
-     ));
+    ));
+}
+function parkour_festivaali_menus_init() {
+    register_nav_menus( array(
+        'info-page-sidebar-menu' => 'Content Page Sidebar Menu',
+    ));
 }
