@@ -83,26 +83,65 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 				)
 			);
 
+			// Parkour-festivaali: Split control to 2 controls to affect header and footer separately
+			// Also have sidebar color
 			// Header & Footer Background Color.
 			$wp_customize->add_setting(
-				'header_footer_background_color',
+				'header_background_color',
 				array(
-					'default'           => '#ffffff',
+					'default'           => '#ff6600',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
+			);
+			$wp_customize->add_setting(
+			    'footer_background_color',
+			    array(
+			        'default'           => '#333333',
+			        'sanitize_callback' => 'sanitize_hex_color',
+			        'transport'         => 'postMessage',
+			    )
+		    );
+			// Sidebar background color
+			$wp_customize->add_setting(
+			    'sidebar_background_color',
+			    array(
+			        'default'           => '#ff6600',
+			        'sanitize_callback' => 'sanitize_hex_color',
+			        'transport'         => 'postMessage'
+			    )
 			);
 
 			$wp_customize->add_control(
 				new WP_Customize_Color_Control(
 					$wp_customize,
-					'header_footer_background_color',
+					'header_background_color',
 					array(
-						'label'   => __( 'Header &amp; Footer Background Color', 'twentytwenty' ),
+						'label'   => __( 'Header Background Color', 'twentytwenty' ),
 						'section' => 'colors',
 					)
 				)
 			);
+			$wp_customize->add_control(
+			    new WP_Customize_Color_Control(
+			        $wp_customize,
+			        'header_background_color',
+			        array(
+			            'label'   => __( 'Footer Background Color', 'twentytwenty' ),
+			            'section' => 'colors',
+			        )
+		        )
+		    );
+			$wp_customize->add_control(
+			    new WP_Customize_Color_Control(
+			        $wp_customize,
+    		        'sidebar_background_color',
+    		        array(
+    		            'label'   => __( 'Sidebar Menu Background Color', 'twentytwenty' ),
+    		            'section' => 'colors',
+    		        )
+		        )
+		    );
 
 			// Enable picking an accent color.
 			$wp_customize->add_setting(
@@ -275,7 +314,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 			/**
 			 * Template: Cover Template.
 			 */
-			$wp_customize->add_section(
+/* 			$wp_customize->add_section(
 				'cover_template_options',
 				array(
 					'title'       => __( 'Cover Template', 'twentytwenty' ),
@@ -283,7 +322,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					'description' => __( 'Settings for the "Cover Template" page template. Add a featured image to use as background.', 'twentytwenty' ),
 					'priority'    => 42,
 				)
-			);
+			); */
 
 			/* Overlay Fixed Background ------ */
 
@@ -335,7 +374,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 			);
 
 			/* Overlay Background Color ------ */
-
+/* 
 			$wp_customize->add_setting(
 				'cover_template_overlay_background_color',
 				array(
@@ -354,11 +393,11 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 						'section'     => 'cover_template_options',
 					)
 				)
-			);
+			); */
 
 			/* Overlay Text Color ------------ */
 
-			$wp_customize->add_setting(
+/* 			$wp_customize->add_setting(
 				'cover_template_overlay_text_color',
 				array(
 					'default'           => '#ffffff',
@@ -377,9 +416,9 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					)
 				)
 			);
-
+ */
 			/* Overlay Color Opacity --------- */
-
+/* 
 			$wp_customize->add_setting(
 				'cover_template_overlay_opacity',
 				array(
@@ -398,7 +437,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					'type'        => 'range',
 					'input_attrs' => twentytwenty_customize_opacity_range(),
 				)
-			);
+			); */
 
 			$wp_customize->selective_refresh->add_partial(
 				'cover_template_overlay_opacity',

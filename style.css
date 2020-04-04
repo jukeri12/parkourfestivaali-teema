@@ -23,8 +23,9 @@
 	src: 'assets/fonts/rocketfuel-font/Rocketfuel-mD2P.otf';
 }
 @font-face {
-	font-family: applestorm-regular;
-	src: 'assets/fonts/applestorm-font/ApplestormRegularW909.otf';
+	font-family: applestorm;
+	src: 'assets/fonts/applestorm-font/ApplestormExtraBold-XRV2.otf';
+	font-weight: bold;
 }
 
 /* FONTS EOF */
@@ -52,14 +53,21 @@ p {
 #site-header p {
 	font-family: rocketfuel;
 	color: white;
+	font-size: 24px;
 }
 #site-header a {
+	/* Nav menu links */
 	font-family: rocketfuel;
 	color: white;
+	font-size: 24px;
 }
 #site-header h2 {
 	font-family: rocketfuel;
 	color: white;
+}
+#site-header .site-title.faux-heading a {
+	/* Actual header title */
+	font-size: 32px;
 }
 
 /* NAVIGATION EOF */
@@ -67,5 +75,36 @@ p {
 /* FOOTER BOF */
 .footer-nav-widgets-wrapper.header-footer-group {
 	background-color: #333;
+	height: 170px;
+	overflow: hidden;  /* This might cause unexpected issues so be careful */
+}
+.footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner {
+	height: 170px;
+	flex-align: center;
+}
+.footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner .footer-widgets-outer-wrapper {
+	height: 170px;
+	padding: 20px;
+}
+.footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner .footer-widgets-outer-wrapper .footer-widgets-wrapper {
+	height: 170px;
+	padding: 0;
+}
+.footer-nav-widgets-wrapper.header-footer-group p {
+	font-size: 14px;
+}
+.footer-nav-widgets-wrapper.header-footer-group a {
+	font-size: 14px;
 }
 /* FOOTER EOF */
+
+/* CONTENT PAGES BOF */
+
+#site-content header h1 {
+	/* Content page titles */
+	font-family: applestorm;
+	font-size: 48px;
+	color: #ff6600;
+}
+
+/* CONTENT PAGES EOF */

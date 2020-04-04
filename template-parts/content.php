@@ -60,8 +60,11 @@
 		if ( is_single() ) {
 
 			get_template_part( 'template-parts/entry-author-bio' );
-			// Add sidebar menu
-			wp_nav_menu( array( 'theme_location' => 'info-page-sidebar-menu' ) );
+			// Add sidebar menu option to single pages (not articles!)
+			// TODO: It might be stupid to have this, as we need to be able to set sidebar according to the page....
+			if ( is_single( 'page' ) ) {
+			     wp_nav_menu( array( 'theme_location' => 'info-page-sidebar-menu' ) );
+			}
 
 		}
 		?>

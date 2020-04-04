@@ -34,3 +34,7 @@ function parkour_festivaali_menus_init() {
         'info-page-sidebar-menu' => 'Content Page Sidebar Menu',
     ));
 }
+// Adjust upload filesizes
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
