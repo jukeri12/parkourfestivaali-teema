@@ -12,7 +12,10 @@
 add_action( 'wp_enqueue_scripts', 'parkour_festivaali_enqueue_styles' );
 add_action( 'widgets_init', 'parkour_festivaali_widgets_init');
 add_action( 'init', 'parkour_festivaali_menus_init' );
-add_filter('comments_open', 'disable_comments');
+add_action( 'customize_controls_enqueue_scripts', 'twentytwenty_child_customize_controls_enqueue_scripts', 1 );
+add_action( 'customize_preview_init', 'twentytwenty_child_customize_preview_init', 1 );
+add_filter( 'comments_open', 'disable_comments' );
+remove_theme_support( 'custom-background' );
 
 /* Functions */
 function parkour_festivaali_enqueue_styles() {
@@ -42,4 +45,18 @@ function parkour_festivaali_menus_init() {
 function disable_comments() {
     // Does what it says it does.
     return false;
+}
+function twentytwenty_child_customize_preview_init() {
+    $theme_version = wp_get_theme()->get( 'Version' );
+    // NOTE: Remove color customizer previews for now
+    // See original theme functions.php for original implementation
+}
+
+function twentytwenty_child_customize_controls_enqueue_scripts() {
+    $theme_version = wp_get_theme()->get( 'Version' );
+    // NOTE: Removed custom color settings for now
+    // See original theme functions.php for original implementation
+    
+    // Add script for color calculations.
+    wp_enqueue_script( 'twentytwenty-color-calculations', get_template_directory_uri() . '/assets/js/color-calculations.js', array( 'wp-color-picker' ), $theme_version, false );
 }
