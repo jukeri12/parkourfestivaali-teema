@@ -48,7 +48,7 @@ p {
 	max-height: 90px;
 }
 #site-header {
-	background-color: #ff6600ff;
+	background-color: #ff6600ff !important;
 }
 #site-header p {
 	font-family: rocketfuel;
@@ -65,7 +65,7 @@ p {
 	font-family: rocketfuel;
 	color: white;
 }
-#site-header .site-title.faux-heading a {
+#site-header .site-title  a {
 	/* Actual header title */
 	font-size: 32px;
 }
@@ -102,9 +102,41 @@ p {
 
 #site-content header h1 {
 	/* Content page titles */
-	font-family: applestorm;
-	font-size: 48px;
-	color: #ff6600;
+	font-family: hussar;
+	font-size: 30px;
+}
+
+#site-content .entry-header .entry-header-inner h2 {
+	/* Content page titles in feed */
+	font-family: hussar;
+	font-size: 30px;
+}
+
+#site-content nav a {
+	font-family: hussar;
+	color: black;
+}
+
+/* Breadtext, writing etc. */
+#site-content .entry-content p, cite, a {
+	font-family: hussar;
+	font-size: 18px;
+	color: black;
+}
+
+/* Article wrapping */
+/* List */
+#site-content article {
+	display: flex;
+	flex-direction: row;
+}
+#site-content article:nth-child(3) {
+	/* Reverse direction for each third child (due to separator) */
+	flex-direction: row-reverse;
+}
+/* Single */
+body.single #site-content article {
+	display: initial;
 }
 
 /* CONTENT PAGES EOF */

@@ -15,17 +15,22 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<?php
-
-	get_template_part( 'template-parts/entry-header' );
-
-	if ( ! is_search() ) {
-		get_template_part( 'template-parts/featured-image' );
-	}
-
+	<?php 
+	   // Show image on the side of the content
+    	if ( ! is_search() ) {
+    	    get_template_part( 'template-parts/featured-image' );
+    	}
 	?>
 
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+    	
+    	<?php
+    
+    	get_template_part( 'template-parts/entry-header' );
+    
+    	
+    
+    	?>
 
 		<div class="entry-content">
 

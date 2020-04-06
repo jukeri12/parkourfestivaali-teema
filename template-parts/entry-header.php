@@ -27,7 +27,8 @@ if ( is_singular() ) {
 			 *
 			 * @param bool   Whether to show the categories in header, Default true.
 			 */
-		$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
+		// TODO: Categories are force disabled - should be an option if possible
+		$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', false );
 
 		if ( true === $show_categories && has_category() ) {
 			?>

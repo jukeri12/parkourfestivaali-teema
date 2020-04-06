@@ -7,9 +7,14 @@
  * Licensed as GPL 2.0
  * 
  */
+
+/* Filters and actions */
 add_action( 'wp_enqueue_scripts', 'parkour_festivaali_enqueue_styles' );
 add_action( 'widgets_init', 'parkour_festivaali_widgets_init');
 add_action( 'init', 'parkour_festivaali_menus_init' );
+add_filter('comments_open', 'disable_comments');
+
+/* Functions */
 function parkour_festivaali_enqueue_styles() {
 
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
@@ -34,7 +39,7 @@ function parkour_festivaali_menus_init() {
         'info-page-sidebar-menu' => 'Content Page Sidebar Menu',
     ));
 }
-// Adjust upload filesizes
-@ini_set( 'upload_max_size' , '64M' );
-@ini_set( 'post_max_size', '64M');
-@ini_set( 'max_execution_time', '300' );
+function disable_comments() {
+    // Does what it says it does.
+    return false;
+}
