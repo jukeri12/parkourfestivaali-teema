@@ -99,7 +99,10 @@ p {
 /* FOOTER EOF */
 
 /* CONTENT PAGES BOF */
-
+#site-content {
+	display: flex;
+	flex-direction: column;
+}
 #site-content header h1 {
 	/* Content page titles */
 	font-family: hussar;
@@ -127,16 +130,23 @@ p {
 /* Article wrapping */
 /* List */
 #site-content article {
-	display: flex;
+	display: inline-flex;
 	flex-direction: row;
+	margin-left: 15%;
+	margin-right: 0%;
 }
 #site-content article:nth-child(3) {
 	/* Reverse direction for each third child (due to separator) */
 	flex-direction: row-reverse;
+	margin-left: 0%;
+	margin-right: 15%;
 }
 /* Single */
 body.single #site-content article {
 	display: initial;
+}
+body.single #site-content article {
+	margin: 0;
 }
 
 /* CONTENT PAGES EOF */
