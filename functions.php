@@ -30,9 +30,11 @@ function parkour_festivaali_enqueue_styles() {
 }
 function remove_useless_controls() {
     global $wp_customize;
+    // TODO: Check these if we want to re-enable some modified customization
     $wp_customize->remove_section( 'options' );
     $wp_customize->remove_section( 'cover_template_options' );
     $wp_customize->remove_section( 'colors' );
+    $wp_customize->remove_section( 'background_image' );
 }
 function add_required_color_theme_controls() {
     // TODO
