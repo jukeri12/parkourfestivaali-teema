@@ -44,11 +44,16 @@ p {
 
 /* NAVIGATION BOF */
 /* TODO: Make header navigation color adjustable from theme settings */
-#site-header {
+#site-header .header-inner {
 	max-height: 90px;
-}
-#site-header {
 	background-color: #ff6600ff !important;
+	width: 100%;
+	max-width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+}
+#site-header .header-inner .header-titles-wrapper {
+	margin-left: 5%;
 }
 #site-header p {
 	font-family: rocketfuel;

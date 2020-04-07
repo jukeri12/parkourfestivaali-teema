@@ -42,7 +42,7 @@ function add_required_color_theme_controls() {
 }
 function parkour_festivaali_widgets_init() {
     register_sidebar( array(
-        'name'          => 'Hero Widget Area',
+        'name'          => 'Hero Widget Area (Visible only on front page!)',
         'id'            => 'hero-widget-area',
         'before_widget' => '<div class="hero-widget">',
         'after_widget'  => '</div>',
