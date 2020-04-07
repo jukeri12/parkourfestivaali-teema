@@ -163,5 +163,8 @@ a.button {
 	text-decoration: none;
 	font-family: applestorm;
 }
+.wp-block-button {
+	font-family: hussar;
+}
 
 /* BUTTONS, GENERIC COMPONENTS EOF */

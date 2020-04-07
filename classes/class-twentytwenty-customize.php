@@ -3,8 +3,8 @@
  * Customizer settings for this theme.
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Twenty_Twenty_Child
+ * @since Twenty Twenty Child 0.1
  */
 
 if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
