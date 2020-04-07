@@ -16,6 +16,7 @@ add_action( 'customize_controls_enqueue_scripts', 'twentytwenty_child_customize_
 add_action( 'customize_preview_init', 'twentytwenty_child_customize_preview_init', 20 );
 add_action( 'customize_register', 'remove_useless_controls', 20 );
 add_filter( 'comments_open', 'disable_comments' );
+add_filter( 'allow_post_meta', 'disable_meta' );
 remove_theme_support( 'custom-background' );
 
 /* Functions */
@@ -57,6 +58,10 @@ function parkour_festivaali_menus_init() {
 }
 function disable_comments() {
     // Does what it says it does.
+    return false;
+}
+function disable_meta() {
+    // Disable post metadata display.
     return false;
 }
 function twentytwenty_child_customize_controls_enqueue_scripts() {

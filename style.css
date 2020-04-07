@@ -109,8 +109,15 @@ p {
 	display: flex;
 	flex-direction: column;
 }
+/* Default fonts */
+#site-content a {
+	font-family: hussar;
+}
+#site-content p {
+	font-family: hussar;
+}
+/* Content page titles */
 #site-content header h1 {
-	/* Content page titles */
 	font-family: hussar;
 	font-size: 30px;
 	text-decoration: none;
@@ -153,6 +160,9 @@ body.single #site-content article {
 }
 body.single #site-content article {
 	margin: 0;
+}
+body.single #site-content article .featured-media {
+	margin-top: 6rem;
 }
 
 /* CONTENT PAGES EOF */d
