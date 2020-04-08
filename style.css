@@ -156,8 +156,23 @@ a.button {
 	text-align: center;
 	font-family: applestorm;
 }
-.wp-block-button {
+#site-content .entry-content .wp-block-button {
+	font-family: hussar !important;
+}
+#site-content .entry-content .wp-block-group {
+	max-width: 80% !important;
+}
+#site-content .entry-content .collapseomatic {
 	font-family: hussar;
+	color: #ff6600;
+	background-color: white;
+	border-radius: 8px;
+	max-width: 16rem;
+	padding: 16px;
+}
+#site-content .entry-content hr.wp-block-separator {
+	margin-top: 2rem;
+	margin-bottom: 3rem;
 }
 /* Article wrapping */
 /* List */
