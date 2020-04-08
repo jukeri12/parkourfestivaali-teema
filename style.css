@@ -199,17 +199,28 @@ body.page #site-content article {
 body.page #site-content article .featured-media {
 	margin-top: 6rem;
 }
-/* Timetable page background */
+/* Timetable page header */
+body.page.page-id-82 .entry-header h1.entry-title {
+	font-family: applestorm !important;
+	font-size: 48 !important;
+	color: #ff6600 !important;
+}
+/* Timetable page background image */
 body.page.page-id-82 main {
 	/* TODO: This is bound to be wrong */
 	background-image: url('assets/images/ohjelma_background.JPG');
 	background-size: cover;
 }
-/* Timetable page header */
-body.page.page-id-82 .entry-header h1.entry-title {
-	font-family: applestorm;
-	font-size: 48;
-	color: #ff6600;
+/* Timetable text content background */
+body.page.page-id-82 main article .post-inner {
+	background-color: #ccc8;
+	margin: 5rem;
+	border-radius: 8px;
 }
+/* Timetable text content */
+body.page.page-id-82 main article .post-inner .entry-content p {
+	color: white;
+}
+
 /* CONTENT PAGES EOF */d
 
