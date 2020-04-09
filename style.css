@@ -156,6 +156,19 @@ a.button {
 	text-align: center;
 	font-family: applestorm;
 }
+hr.post-separator {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	background-color: #333a !important;
+	width: 60%;
+}
+ /* Remove the // from the separator */
+hr.post-separator:before {
+	background: none;
+}
+hr.post-separator:after {
+	background: none;
+}
 #site-content .entry-content .wp-block-button {
 	font-family: hussar !important;
 }
@@ -179,23 +192,34 @@ a.button {
 #site-content article {
 	display: inline-flex;
 	flex-direction: row;
-	width: 80%;
+	justify-content: space-evenly;
+	align-items: end;
+	width: 60%;
 	margin: auto;
 }
 #site-content article:nth-child(3) {
 	/* Reverse direction for each third child (due to separator) */
 	flex-direction: row-reverse;
 }
+#site-content article:last-child {
+	margin-bottom: 100px;
+}
+#site-content article .featured-media img {
+	max-width: 70%;
+	margin: 0;
+}
+#site-content article .post-inner {
+	padding-top: 0;
+}
 /* Single post or article */
 body.single #site-content article {
 	display: initial;
 }
-body.single #site-content article .featured-media {
-	margin-top: 6rem;
-}
+
 body.page #site-content article {
 	display: initial;
 }
+
 body.page #site-content article .featured-media {
 	margin-top: 6rem;
 }
