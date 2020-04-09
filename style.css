@@ -58,13 +58,13 @@ p {
 #site-header p {
 	font-family: rocketfuel;
 	color: white;
-	font-size: 24px;
+	font-size: 0.8em;
 }
 #site-header a {
 	/* Nav menu links */
 	font-family: rocketfuel;
 	color: white;
-	font-size: 24px;
+	font-size: 0.8em;
 	text-decoration: none;
 }
 #site-header h2 {
@@ -73,8 +73,14 @@ p {
 }
 #site-header .site-title  a {
 	/* Actual header title */
-	font-size: 32px;
+	font-size: 0.9em;
 	text-decoration: none;
+}
+/* Hero Carousel tuning */
+#site-header .sp-widget-post-slider-section .widget-post-slider img {
+	width: 100%;
+	max-height: 100%;
+	background-size: contain;
 }
 
 /* NAVIGATION EOF */
@@ -141,7 +147,7 @@ p {
 /* Breadtext, writing etc. */
 #site-content .entry-content p, cite, a, li {
 	font-family: hussar;
-	font-size: 18px;
+	font-size: 1em;
 	color: black;
 }
 /* Buttons, links, generic components */
@@ -225,9 +231,9 @@ body.page #site-content article .featured-media {
 }
 /* Timetable page header */
 body.page.page-id-82 .entry-header h1.entry-title {
-	font-family: applestorm !important;
-	font-size: 48 !important;
-	color: #ff6600 !important;
+	font-family: applestorm;
+	font-size: 1.2em;
+	color: #ff6600;
 }
 /* Timetable page background image */
 body.page.page-id-82 main {

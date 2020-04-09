@@ -28,6 +28,7 @@ function parkour_festivaali_enqueue_styles() {
 		array( 'parent-style' ),
 		wp_get_theme()->get('Version')
 	);
+	wp_enqueue_script("slick_carousel", "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js");
 }
 function remove_useless_controls() {
     global $wp_customize;
