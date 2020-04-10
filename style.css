@@ -221,14 +221,36 @@ hr.post-separator:after {
 	padding-top: 0;
 }
 /* Single post or article */
+/* Article posts are fine as they are */
 body.single #site-content article {
 	display: initial;
 }
 
+/* Display single pages in 2 columns, with option for left menu */
 body.page #site-content article {
-	display: initial;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0;
 }
-
+body.page #site-content article .section-single-page-sidebar-menu {
+	background-color: #ff6600;
+	min-height: 500px;
+	color: white;
+	margin: 0;
+	max-width: 33%;
+}
+body.page #site-content article .section-single-page-sidebar-menu ul {
+	margin-top: 8rem;
+}
+body.page #site-content article .post-inner {
+	padding-left: 10% !important;
+	padding-top: 2% !important;
+}
+body.page #site-content article .section-single-page-sidebar-menu a {
+	color: white;
+}
 body.page #site-content article .featured-media {
 	margin-top: 6rem;
 }
