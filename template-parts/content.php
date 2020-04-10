@@ -46,7 +46,7 @@
 		</div><!-- .entry-content -->
 
 	</div><!-- .post-inner -->
-	<?php if ( is_single( 'page' ) ): ?>
+	<?php if ( is_page( ) ): ?>
 	<div class="section-inner section-single-page-sidebar-menu">
 	
 		<?php

@@ -182,7 +182,7 @@
 			
 			<?php 
 			// Add header/hero carousel widget area if possible
-			if ( is_active_sidebar('hero-widget-area') && !is_single() ):
+			if ( is_active_sidebar('hero-widget-area') && is_front_page() ):
 			?>
 				<div id="hero-widget-area" class="hero-widget">
 					<?php dynamic_sidebar( 'hero-widget-area' );?>
