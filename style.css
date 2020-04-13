@@ -206,8 +206,8 @@ hr.post-separator:after {
 	width: 60%;
 	margin: auto;
 }
-#site-content article:nth-child(3) {
-	/* Reverse direction for each third child (due to separator) */
+#site-content article:nth-child(4n-1) {
+	/* Reverse article list direction */
 	flex-direction: row-reverse;
 }
 #site-content article:last-child {
