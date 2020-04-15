@@ -44,6 +44,10 @@ p {
 
 
 /* GENERIC LAYOUT BOF */
+/* TODO: Can we get rid of these important-rules? */
+body {
+	background-color: white !important;
+}
 body.custom-background {
 	background-color: white !important;
 }
@@ -76,6 +80,15 @@ article {
 	color: white;
 	font-size: 1.5em;
 	text-decoration: none;
+}
+/* NOTE: DUplicated since the reason for populating this class in page content is not obvious */
+#site-header li.current-menu-item a {
+	color: #ff6600;
+	background: white;
+	padding: 10px;
+	border-radius: 8px;
+	min-width: 100px;
+}
 }
 #site-header h2 {
 	font-family: rocketfuel;
@@ -158,6 +171,7 @@ article {
 	color: black;
 	text-decoration: none;
 }
+
 /* Breadtext, writing etc. */
 #site-content .entry-content p, cite, a, li {
 	font-family: hussar;
@@ -182,6 +196,26 @@ hr.post-separator {
 	background-color: #333a !important;
 	width: 60%;
 }
+ul li a {
+	list-style: none;
+	padding: 5px;
+	font-size: 24px;
+	color: white;
+}
+ul li.current-menu-item > a {
+	color: #ff6600;
+	background: white;
+	padding: 10px;
+	border-radius: 8px;
+	min-width: 100px;
+}
+ul li.current-page-item > a {
+	color: #ff6600;
+	background: white;
+	padding: 10px;
+	border-radius: 8px;
+	min-width: 100px;
+}
  /* Remove the // from the separator */
 hr.post-separator:before {
 	background: none;
@@ -189,24 +223,11 @@ hr.post-separator:before {
 hr.post-separator:after {
 	background: none;
 }
-#site-content ul.menu li {
+#site-content ul li {
 	list-style: none;
 	padding: 5px;
 	font-size: 18px;
 	color: white;
-}
-#site-content ul.menu li a {
-	list-style: none;
-	padding: 5px;
-	font-size: 24px;
-	color: white;
-}
-#site-content ul.menu li.current-menu-item > a {
-	color: #ff6600;
-	background: white;
-	padding: 10px;
-	border-radius: 8px;
-	min-width: 500px;
 }
 #site-content .entry-content .wp-block-button a {
 	font-family: hussar;
