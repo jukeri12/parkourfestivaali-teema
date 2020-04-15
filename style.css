@@ -43,6 +43,16 @@ p {
 /* TEXT BASE EOF */
 
 
+/* GENERIC LAYOUT BOF */
+body.custom-background {
+	background-color: white !important;
+}
+article {
+	background-color: white !important;
+}
+
+/* GENERIC LAYOUT EOF */
+
 /* NAVIGATION BOF */
 /* TODO: Make header navigation color adjustable from theme settings */
 #site-header .header-inner {
@@ -132,7 +142,8 @@ p {
 #site-content header h1 {
 	font-family: hussar;
 	font-size: 30px;
-	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
 }
 #site-content .entry-header {
 	background-color: initial;
@@ -178,8 +189,29 @@ hr.post-separator:before {
 hr.post-separator:after {
 	background: none;
 }
-#site-content .entry-content .wp-block-button {
-	font-family: hussar !important;
+#site-content ul.menu li {
+	list-style: none;
+	padding: 5px;
+	font-size: 18px;
+	color: white;
+}
+#site-content ul.menu li a {
+	list-style: none;
+	padding: 5px;
+	font-size: 24px;
+	color: white;
+}
+#site-content ul.menu li.current-menu-item > a {
+	color: #ff6600;
+	background: white;
+	padding: 10px;
+	border-radius: 8px;
+	min-width: 500px;
+}
+#site-content .entry-content .wp-block-button a {
+	font-family: hussar;
+	color: white;
+	text-decoration: none;
 }
 #site-content .entry-content .wp-block-group {
 	max-width: 80% !important;
@@ -197,8 +229,8 @@ hr.post-separator:after {
 	margin-bottom: 3rem;
 }
 /* Article wrapping */
-/* List */
-#site-content article {
+/* Frontpage List */
+body.home.blog #site-content article {
 	display: inline-flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -206,53 +238,60 @@ hr.post-separator:after {
 	width: 60%;
 	margin: auto;
 }
-#site-content article:nth-child(4n-1) {
+body.home.blog #site-content article:nth-child(4n-1) {
 	/* Reverse article list direction */
 	flex-direction: row-reverse;
 }
-#site-content article:last-child {
+body.home.blog #site-content article:last-child {
 	margin-bottom: 100px;
 }
-#site-content article .featured-media img {
+body.home.blog #site-content article .featured-media img {
 	max-width: 70%;
 	margin: 0;
 }
-#site-content article .post-inner {
+body.home.blog #site-content article .post-inner {
 	padding-top: 0;
 }
 /* Single post or article */
-/* Article posts are fine as they are */
+/* Article posts are fine as they are (class .single) */
 body.single #site-content article {
 	display: initial;
 }
 
-/* Display single pages in 2 columns, with option for left menu */
-body.page #site-content article {
-	display: flex;
+/* Display single pages (class .page, not timetable) in 2 columns, with option for left menu */
+body.page:not(.page-id-82) #site-content article {
+	display: table;
 	flex-direction: row-reverse;
 	justify-content: flex-end;
 	align-items: center;
 	margin: 0;
+	width: 100%;
 }
-body.page #site-content article .section-single-page-sidebar-menu {
+body.page:not(.page-id-82) #site-content article .section-single-page-sidebar-menu {
+	display: table-cell;
 	background-color: #ff6600;
-	min-height: 500px;
+	min-height: 750px;
 	color: white;
-	margin: 0;
-	max-width: 33%;
 }
-body.page #site-content article .section-single-page-sidebar-menu ul {
+body.page:not(.page-id-82) #site-content article .section-single-page-sidebar-menu ul {
 	margin-top: 8rem;
 }
-body.page #site-content article .post-inner {
-	padding-left: 10% !important;
-	padding-top: 2% !important;
+body.page:not(.page-id-82) #site-content article .post-inner {
+	display: table-cell;
+	padding-left: 6rem;
 }
-body.page #site-content article .section-single-page-sidebar-menu a {
-	color: white;
-}
-body.page #site-content article .featured-media {
+body.page:not(.page-id-82) #site-content article .featured-media {
 	margin-top: 6rem;
+}
+body.page:not(.page-id-82) #site-content article .post-inner.thin {
+	padding-top: 2rem;
+}
+body.page:not(.page-id-82) #site-content article .post-inner.thin .entry-header {
+	padding: 2rem;
+}
+body.page:not(.page-id-82) #site-content article .post-inner.thin .entry-content {
+	padding-bottom: 4rem;
+	padding-right: 50px;
 }
 /* Timetable page header */
 body.page.page-id-82 .entry-header h1.entry-title {
@@ -271,6 +310,8 @@ body.page.page-id-82 main article .post-inner {
 	background-color: #ccc8;
 	margin: 5rem;
 	border-radius: 8px;
+	width: 60%;
+	margin: 100px auto;
 }
 /* Timetable text content */
 body.page.page-id-82 main article .post-inner .entry-content p {

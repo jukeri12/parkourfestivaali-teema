@@ -21,7 +21,19 @@
     	    get_template_part( 'template-parts/featured-image' );
     	}
 	?>
+	<?php if ( is_page( ) ): ?>
+	<div class="section-inner section-single-page-sidebar-menu">
+	
+		<?php
+		// Add sidebar menu option to single pages (not articles!)
+		// TODO: It might be stupid to have this, as we need to be able to set sidebar according to the page....
 
+		 wp_nav_menu( array( 'theme_location' => 'info-page-sidebar-menu' ) );
+
+		?>
+		
+	</div><!-- .section-inner -->
+	<?php endif; ?>
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
     	
     	<?php
@@ -46,19 +58,7 @@
 		</div><!-- .entry-content -->
 
 	</div><!-- .post-inner -->
-	<?php if ( is_page( ) ): ?>
-	<div class="section-inner section-single-page-sidebar-menu">
-	
-		<?php
-		// Add sidebar menu option to single pages (not articles!)
-		// TODO: It might be stupid to have this, as we need to be able to set sidebar according to the page....
 
-		 wp_nav_menu( array( 'theme_location' => 'info-page-sidebar-menu' ) );
-
-		?>
-		
-	</div><!-- .section-inner -->
-	<?php endif; ?>
 	<?php
 
 	if ( is_single() ) {
