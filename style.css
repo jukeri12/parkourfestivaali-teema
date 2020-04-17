@@ -12,8 +12,8 @@
  Text Domain:  twentytwenty
 */
 
+
 /* FONTS BOF */
-/* TODO: We might be better off using a font plugin or similar */
 @font-face {
 	font-family: hussar;
 	src: 'assets/fonts/hussar-szturm-font/HussarSzturmAlxg.otf';
@@ -27,21 +27,45 @@
 	src: 'assets/fonts/applestorm-font/ApplestormExtraBold-XRV2.otf';
 	font-weight: bold;
 }
-
 /* FONTS EOF */
 
 
 /* TEXT BASE BOF */
-
 p {
 	color: white;
 }
 .widget_text p {
 	font-family: hussar;
 }
-
 /* TEXT BASE EOF */
 
+
+/* FOOTER BOF */
+.footer-nav-widgets-wrapper.header-footer-group {
+	background-color: #333;
+	height: 170px;
+	margin-top: 0;
+}
+.footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner {
+	height: 170px;
+	flex-align: center;
+	max-width: 80%;
+}
+.footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner .footer-widgets-outer-wrapper {
+	height: 170px;
+	padding: 20px;
+}
+.footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner .footer-widgets-outer-wrapper .footer-widgets-wrapper {
+	height: 170px;
+	padding: 0;
+}
+.footer-nav-widgets-wrapper.header-footer-group p {
+	font-size: 14px;
+}
+.footer-nav-widgets-wrapper.header-footer-group a {
+	font-size: 14px;
+}
+/* FOOTER EOF */
 
 /* GENERIC LAYOUT BOF */
 /* TODO: Can we get rid of these important-rules? */
@@ -51,16 +75,15 @@ body {
 body.custom-background {
 	background-color: white !important;
 }
-article {
+article:not(.post-82) {
 	background-color: white !important;
 }
-
 /* GENERIC LAYOUT EOF */
 
+
 /* NAVIGATION BOF */
-/* TODO: Make header navigation color adjustable from theme settings */
 #site-header .header-inner {
-	max-height: 90px;
+	max-height: 120px;
 	background-color: #ff6600ff !important;
 	width: 100%;
 	max-width: 100%;
@@ -89,7 +112,6 @@ article {
 	border-radius: 8px;
 	min-width: 100px;
 }
-}
 #site-header h2 {
 	font-family: rocketfuel;
 	color: white;
@@ -108,35 +130,7 @@ article {
 	max-height: 100%;
 	background-size: contain;
 }
-
 /* NAVIGATION EOF */
-
-/* FOOTER BOF */
-.footer-nav-widgets-wrapper.header-footer-group {
-	background-color: #333;
-	height: 170px;
-	margin-top: 0;
-}
-.footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner {
-	height: 170px;
-	flex-align: center;
-	max-width: 80%;
-}
-.footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner .footer-widgets-outer-wrapper {
-	height: 170px;
-	padding: 20px;
-}
-.footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner .footer-widgets-outer-wrapper .footer-widgets-wrapper {
-	height: 170px;
-	padding: 0;
-}
-.footer-nav-widgets-wrapper.header-footer-group p {
-	font-size: 14px;
-}
-.footer-nav-widgets-wrapper.header-footer-group a {
-	font-size: 14px;
-}
-/* FOOTER EOF */
 
 
 /* CONTENT PAGES BOF */
@@ -249,95 +243,187 @@ hr.post-separator:after {
 	margin-top: 2rem;
 	margin-bottom: 3rem;
 }
-/* Article wrapping */
-/* Frontpage List */
-body.home.blog #site-content article {
-	display: inline-flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: end;
-	width: 60%;
-	margin: auto;
-}
-body.home.blog #site-content article:nth-child(4n-1) {
-	/* Reverse article list direction */
-	flex-direction: row-reverse;
-}
-body.home.blog #site-content article:last-child {
-	margin-bottom: 100px;
-}
-body.home.blog #site-content article .featured-media img {
-	max-width: 70%;
-	margin: 0;
-}
-body.home.blog #site-content article .post-inner {
-	padding-top: 0;
-}
-/* Single post or article */
-/* Article posts are fine as they are (class .single) */
-body.single #site-content article {
-	display: initial;
+
+
+/* DESKTOP RULES BOF */
+@media only screen and (min-width: 360px) {
+
+	/* Article wrapping */
+	/* Frontpage List */
+	body.home.blog #site-content article {
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: end;
+		width: 60%;
+		margin: auto;
+	}
+	body.home.blog #site-content article:nth-child(4n-1) {
+		/* Reverse article list direction */
+		flex-direction: row-reverse;
+	}
+	body.home.blog #site-content article:last-child {
+		margin-bottom: 100px;
+	}
+	body.home.blog #site-content article .featured-media img {
+		max-width: 70%;
+		margin: 0;
+	}
+	body.home.blog #site-content article .post-inner {
+		padding-top: 0;
+	}
+	/* Single post or article */
+	/* Article posts are fine as they are (class .single) */
+	body.single #site-content article {
+		display: initial;
+	}
+	
+	/* Display single pages (class .page, not timetable) in 2 columns, with option for left menu */
+	body.page:not(.page-id-82) #site-content article {
+		display: table;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 0;
+		width: 100%;
+	}
+	body.page:not(.page-id-82) #site-content article .section-single-page-sidebar-menu {
+		display: table-cell;
+		background-color: #ff6600;
+		min-height: 750px;
+		color: white;
+	}
+	body.page:not(.page-id-82) #site-content article .section-single-page-sidebar-menu ul {
+		margin-top: 8rem;
+	}
+	body.page:not(.page-id-82) #site-content article .post-inner {
+		display: table-cell;
+		padding-left: 6rem;
+	}
+	body.page:not(.page-id-82) #site-content article .featured-media {
+		margin-top: 6rem;
+	}
+	body.page:not(.page-id-82) #site-content article .post-inner.thin {
+		padding-top: 2rem;
+	}
+	body.page:not(.page-id-82) #site-content article .post-inner.thin .entry-header {
+		padding: 2rem;
+	}
+	body.page:not(.page-id-82) #site-content article .post-inner.thin .entry-content {
+		padding-bottom: 4rem;
+		padding-right: 50px;
+	}
+	/* Timetable page header */
+	body.page.page-id-82 .entry-header h1.entry-title {
+		font-family: applestorm;
+		font-size: 1.2em;
+		color: #ff6600;
+	}
+	/* Timetable page background image */
+	body.page.page-id-82 main {
+		/* TODO: This is bound to be wrong */
+		background-image: url('assets/images/ohjelma_background.JPG');
+		background-size: cover;
+	}
+	/* Timetable text content background */
+	body.page.page-id-82 main article .post-inner {
+		background-color: #ccc8;
+		margin: 5rem;
+		border-radius: 8px;
+		width: 60%;
+		margin: 100px auto;
+	}
+	/* Timetable text content */
+	body.page.page-id-82 main article .post-inner .entry-content p {
+		color: white;
+	}
+	/* CONTENT PAGES EOF */d
 }
 
-/* Display single pages (class .page, not timetable) in 2 columns, with option for left menu */
-body.page:not(.page-id-82) #site-content article {
-	display: table;
-	flex-direction: row-reverse;
-	justify-content: flex-end;
-	align-items: center;
-	margin: 0;
-	width: 100%;
+/* MOBILE RULES BOF */
+@media only screen and (max-width: 360px) {
+	/* MOBILE NAV BOF */
+	body.home.blog #site-content article {
+		flex-direction: column;
+	}
+	#site-content .entry-content p {
+		text-align: center;
+	}
+	body .menu-modal {
+		background: transparent;
+	}
+	body .menu-modal .menu-modal-inner {
+		background: transparent;
+	}
+	body .menu-modal .menu-modal-inner .section-inner {
+		width: 100%;
+	}
+	body .menu-modal .menu-modal-inner .menu-top {
+		background: #ff6600;
+	}
+	body .menu-modal li.menu-item {
+		background-color: #ff6600;
+	}
+	body .menu-modal a {
+		color: white;
+		font-family: hussar;
+	}
+	body .menu-modal .modal-menu li.current-menu-item > .ancestor-wrapper > a {
+		color: #ff6600;
+		text-decoration: none;
+		background-color: white;
+	}
+	body .menu-modal a:hover {
+		text-decoration: none;
+	}
+	body .menu-modal button.close-nav-toggle svg {
+		color: white;
+		height: 4rem;
+		width: 4rem;
+		margin-right: 3rem;
+	}
+	#site-header .header-inner button.toggle {
+		max-height: 120px;
+		padding: 0;
+	}
+	#site-header .header-inner button.toggle span.toggle-icon {
+		height: 4rem;
+		width: 4rem;
+	}
+	#site-header .header-inner button.toggle span.toggle-icon svg {
+		height: 4rem;
+		width: 4rem;
+		color: white;
+	}
+	#site-header .header-inner button.toggle span.toggle-icon svg polygon {
+		height: 4rem;
+		width: 4rem;
+		fill: white;
+	}
+	/* MOBILE NAV EOF */
+		
+		
+	/* MOBILE SIDEBAR MENU BOF */
+	#site-content .section-inner.section-single-page-sidebar-menu {
+		margin: 0;
+		width: 100%;
+	}
+	#site-content .section-inner.section-single-page-sidebar-menu ul {
+		margin: 0;
+	}
+	#site-content .section-inner.section-single-page-sidebar-menu ul > li {
+		margin: 0;
+		background-color: #ff6600;
+	}
+	#site-content .section-inner.section-single-page-sidebar-menu ul > li.current-menu-item {
+		background-color: white;
+	}
+	#site-content .section-inner.section-single-page-sidebar-menu ul > li.current-menu-item a {
+		color: #ff6600;
+	}
+	#site-content .section-inner.section-single-page-sidebar-menu ul > li a {
+		background: none;
+	}
+	/* MOBILE SIDEBAR MENU EOF */
 }
-body.page:not(.page-id-82) #site-content article .section-single-page-sidebar-menu {
-	display: table-cell;
-	background-color: #ff6600;
-	min-height: 750px;
-	color: white;
-}
-body.page:not(.page-id-82) #site-content article .section-single-page-sidebar-menu ul {
-	margin-top: 8rem;
-}
-body.page:not(.page-id-82) #site-content article .post-inner {
-	display: table-cell;
-	padding-left: 6rem;
-}
-body.page:not(.page-id-82) #site-content article .featured-media {
-	margin-top: 6rem;
-}
-body.page:not(.page-id-82) #site-content article .post-inner.thin {
-	padding-top: 2rem;
-}
-body.page:not(.page-id-82) #site-content article .post-inner.thin .entry-header {
-	padding: 2rem;
-}
-body.page:not(.page-id-82) #site-content article .post-inner.thin .entry-content {
-	padding-bottom: 4rem;
-	padding-right: 50px;
-}
-/* Timetable page header */
-body.page.page-id-82 .entry-header h1.entry-title {
-	font-family: applestorm;
-	font-size: 1.2em;
-	color: #ff6600;
-}
-/* Timetable page background image */
-body.page.page-id-82 main {
-	/* TODO: This is bound to be wrong */
-	background-image: url('assets/images/ohjelma_background.JPG');
-	background-size: cover;
-}
-/* Timetable text content background */
-body.page.page-id-82 main article .post-inner {
-	background-color: #ccc8;
-	margin: 5rem;
-	border-radius: 8px;
-	width: 60%;
-	margin: 100px auto;
-}
-/* Timetable text content */
-body.page.page-id-82 main article .post-inner .entry-content p {
-	color: white;
-}
-
-/* CONTENT PAGES EOF */d
-
+/* MOBILE RULES EOF */
