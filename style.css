@@ -84,7 +84,7 @@ article:not(.post-82) {
 /* NAVIGATION BOF */
 #site-header .header-inner {
 	max-height: 120px;
-	background-color: #ff6600ff !important;
+	background-color: red !important;
 	width: 100%;
 	max-width: 100%;
 	margin-right: 0;
@@ -106,7 +106,7 @@ article:not(.post-82) {
 }
 /* NOTE: DUplicated since the reason for populating this class in page content is not obvious */
 #site-header li.current-menu-item a {
-	color: #ff6600;
+	color: red;
 	background: white;
 	padding: 10px;
 	border-radius: 8px;
@@ -178,7 +178,7 @@ a {
 }
 a.button {
 	/* Link buttons */
-	background-color: #ff6600;
+	background-color: red;
 	color: white;
 	border: none;
 	text-align: center;
@@ -197,14 +197,14 @@ ul li a {
 	color: white;
 }
 ul li.current-menu-item > a {
-	color: #ff6600;
+	color: red;
 	background: white;
 	padding: 10px;
 	border-radius: 8px;
 	min-width: 100px;
 }
 ul li.current-page-item > a {
-	color: #ff6600;
+	color: red;
 	background: white;
 	padding: 10px;
 	border-radius: 8px;
@@ -233,7 +233,7 @@ hr.post-separator:after {
 }
 #site-content .entry-content .collapseomatic {
 	font-family: hussar;
-	color: #ff6600;
+	color: red;
 	background-color: white;
 	border-radius: 8px;
 	max-width: 16rem;
@@ -289,7 +289,7 @@ hr.post-separator:after {
 	}
 	body.page:not(.page-id-82) #site-content article .section-single-page-sidebar-menu {
 		display: table-cell;
-		background-color: #ff6600;
+		background-color: red;
 		min-height: 750px;
 		color: white;
 	}
@@ -317,7 +317,7 @@ hr.post-separator:after {
 	body.page.page-id-82 .entry-header h1.entry-title {
 		font-family: applestorm;
 		font-size: 1.2em;
-		color: #ff6600;
+		color: red;
 	}
 	/* Timetable page background image */
 	body.page.page-id-82 main {
@@ -342,6 +342,14 @@ hr.post-separator:after {
 
 /* MOBILE RULES BOF */
 @media only screen and (max-width: 360px) {
+	/* MOBILE GENERIC COMPONENTS BOF */
+	#site-content .entry-content .collapseomatic {
+		color: white;
+		background-color: red;
+	}
+	/* MOBILE GENERIC COMPONENTS EOF */
+
+
 	/* MOBILE NAV BOF */
 	body.home.blog #site-content article {
 		flex-direction: column;
@@ -359,17 +367,17 @@ hr.post-separator:after {
 		width: 100%;
 	}
 	body .menu-modal .menu-modal-inner .menu-top {
-		background: #ff6600;
+		background: red;
 	}
 	body .menu-modal li.menu-item {
-		background-color: #ff6600;
+		background-color: red;
 	}
 	body .menu-modal a {
 		color: white;
 		font-family: hussar;
 	}
 	body .menu-modal .modal-menu li.current-menu-item > .ancestor-wrapper > a {
-		color: #ff6600;
+		color: red;
 		text-decoration: none;
 		background-color: white;
 	}
@@ -402,7 +410,12 @@ hr.post-separator:after {
 	}
 	/* MOBILE NAV EOF */
 		
-		
+	
+	/* MOBILE TIMETABLE BOF */
+	
+	/* MOBILE TIMETABLE EOF */
+	
+	
 	/* MOBILE SIDEBAR MENU BOF */
 	#site-content .section-inner.section-single-page-sidebar-menu {
 		margin: 0;
@@ -413,13 +426,13 @@ hr.post-separator:after {
 	}
 	#site-content .section-inner.section-single-page-sidebar-menu ul > li {
 		margin: 0;
-		background-color: #ff6600;
+		background-color: red;
 	}
 	#site-content .section-inner.section-single-page-sidebar-menu ul > li.current-menu-item {
 		background-color: white;
 	}
 	#site-content .section-inner.section-single-page-sidebar-menu ul > li.current-menu-item a {
-		color: #ff6600;
+		color: red;
 	}
 	#site-content .section-inner.section-single-page-sidebar-menu ul > li a {
 		background: none;
