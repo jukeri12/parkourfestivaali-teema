@@ -227,6 +227,7 @@ hr.post-separator:after {
 	font-family: hussar;
 	color: white;
 	text-decoration: none;
+	background-color: red;
 }
 #site-content .entry-content .wp-block-group {
 	max-width: 80% !important;
