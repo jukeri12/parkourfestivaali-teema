@@ -75,7 +75,7 @@ body {
 body.custom-background {
 	background-color: white !important;
 }
-article:not(.post-82) {
+body:not(.timetable) article {
 	background-color: white !important;
 }
 /* GENERIC LAYOUT EOF */
@@ -280,7 +280,7 @@ hr.post-separator:after {
 	}
 	
 	/* Display single pages (class .page, not timetable) in 2 columns, with option for left menu */
-	body.page:not(.page-id-82) #site-content article {
+	body.page:not(.timetable) #site-content article {
 		display: table;
 		flex-direction: row-reverse;
 		justify-content: flex-end;
@@ -288,46 +288,46 @@ hr.post-separator:after {
 		margin: 0;
 		width: 100%;
 	}
-	body.page:not(.page-id-82) #site-content article .section-single-page-sidebar-menu {
+	body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu {
 		display: table-cell;
 		background-color: red;
 		min-height: 750px;
 		color: white;
 	}
-	body.page:not(.page-id-82) #site-content article .section-single-page-sidebar-menu ul {
+	body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu ul {
 		margin-top: 8rem;
 	}
-	body.page:not(.page-id-82) #site-content article .post-inner {
+	body.page:not(.timetable) #site-content article .post-inner {
 		display: table-cell;
 		padding-left: 6rem;
 	}
-	body.page:not(.page-id-82) #site-content article .featured-media {
+	body.page:not(.timetable) #site-content article .featured-media {
 		margin-top: 6rem;
 	}
-	body.page:not(.page-id-82) #site-content article .post-inner.thin {
+	body.page:not(.timetable) #site-content article .post-inner.thin {
 		padding-top: 2rem;
 	}
-	body.page:not(.page-id-82) #site-content article .post-inner.thin .entry-header {
+	body.page:not(.timetable) #site-content article .post-inner.thin .entry-header {
 		padding: 2rem;
 	}
-	body.page:not(.page-id-82) #site-content article .post-inner.thin .entry-content {
+	body.page:not(.timetable) #site-content article .post-inner.thin .entry-content {
 		padding-bottom: 4rem;
 		padding-right: 50px;
 	}
 	/* Timetable page header */
-	body.page.page-id-82 .entry-header h1.entry-title {
+	body.page.timetable .entry-header h1.entry-title {
 		font-family: applestorm;
 		font-size: 1.2em;
 		color: red;
 	}
 	/* Timetable page background image */
-	body.page.page-id-82 main {
+	body.page.timetable main {
 		/* TODO: This is bound to be wrong */
 		background-image: url('assets/images/ohjelma_background.JPG');
 		background-size: cover;
 	}
 	/* Timetable text content background */
-	body.page.page-id-82 main article .post-inner {
+	body.page.timetable main article .post-inner {
 		background-color: #ccc8;
 		margin: 5rem;
 		border-radius: 8px;
@@ -335,7 +335,7 @@ hr.post-separator:after {
 		margin: 100px auto;
 	}
 	/* Timetable text content */
-	body.page.page-id-82 main article .post-inner .entry-content p {
+	body.page.timetable main article .post-inner .entry-content p {
 		color: white;
 	}
 	/* CONTENT PAGES EOF */d
