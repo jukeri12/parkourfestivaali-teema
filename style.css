@@ -326,6 +326,17 @@ hr.post-separator:after {
 	body.single #site-content article {
 		display: initial;
 	}
+	body.single #site-content article .post-inner {
+		padding-top: 0;
+	}
+	/* Fix padding with single page navigation at bottom */
+	body.single #site-content article nav.pagination-single {
+		margin: 0 auto;
+		padding-bottom: 48px;
+		padding-left: 48px;
+		padding-right: 48px;
+		padding-top: 0px;
+	}
 	
 	/* Display single pages (class .page, not timetable) in 2 columns, with option for left menu */
 	body.page:not(.timetable) #site-content article {
@@ -458,11 +469,68 @@ hr.post-separator:after {
 		fill: white;
 	}
 	/* MOBILE NAV EOF */
+	/* Hero Carousel tuning */
+	#site-header .sp-widget-post-slider-section .slick-arrow {
+		background-color: red;
+		height: 200px;
+		width: 20px;
+	}
+	#site-header .sp-widget-post-slider-section .slick-arrow i {
+		font-size: 24rem;
+		position: relative;
+		top: 25%
+	}
+	#site-header .sp-widget-post-slider-section .slick-slide .wps-caption {
+		text-align: center;
+	}
+	#site-header .sp-widget-post-slider-section .slick-slide img {
+		height: 100%;
+		width: 100%
+	}
+	#site-header .sp-widget-post-slider-section .slick-slide .wps-caption a {
+		font-size: 2.4rem;
+	}
+	#site-header .sp-widget-post-slider-section .slick-list {
+		overflow: visible;
+	}
+	/* Left and right carousel arrows */
+	#site-header .sp-widget-post-slider-section .slick-prev.slick-arrow {
+		width: 20%;
+		top: 30px;
+		height: 100%;
+		background: rgb(255,0,0);
+		background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.46680679107580536) 50%, rgba(0,212,255,0) 100%);
+	}
+	#site-header .sp-widget-post-slider-section .slick-next.slick-arrow {
+		width: 20%;
+		height: 100%;
+		top: 30px;
+		background: rgb(255,0,0);
+		background: linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.46680679107580536) 50%, rgba(0,212,255,0) 100%);
+	}
 		
 	
 	/* MOBILE TIMETABLE BOF */
 	
 	/* MOBILE TIMETABLE EOF */
+	
+	
+	/* MOBILE SINGLE PAGE/ARTICLE BOF */
+	body.single #site-content article {
+		display: initial;
+	}
+	body.single #site-content article .post-inner {
+		padding-top: 0;
+	}
+	/* Fix padding with single page navigation at bottom */
+	body.single #site-content article nav.pagination-single {
+		margin: 0 auto;
+		padding-bottom: 48px;
+		padding-left: 48px;
+		padding-right: 48px;
+		padding-top: 0px;
+	}
+	/* MOBILE SINGLE PAGE/ARTICLE EOF */
 	
 	
 	/* MOBILE SIDEBAR MENU BOF */
