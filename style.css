@@ -78,6 +78,24 @@ body.custom-background {
 body:not(.timetable) article {
 	background-color: white !important;
 }
+/* Fixes for single page heights */
+html {
+	/* Better to have site which scales properly even on non-content pages */
+	min-height: 100%;
+	height: 100%;
+}
+body.page:not(.timetable) {
+	height: 100%;
+	min-height: 100%;
+}
+body.page:not(.timetable) main {
+	height: 100%;
+	min-height: 100%;
+}
+body.page:not(.timetable) article {
+	height: 100%;
+	min-height: 100%;
+}
 /* GENERIC LAYOUT EOF */
 
 
