@@ -34,6 +34,9 @@
 p {
 	color: white;
 }
+span {
+	color: black;
+}
 .widget_text p {
 	font-family: hussar;
 }
@@ -111,27 +114,34 @@ body.page:not(.timetable) article {
 	padding-right: 12%;
 }
 #site-header p {
-	font-family: rocketfuel;
+	font-family: Franklin Gothic Heavy;
+	font-weight: bold;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	color: white;
 	font-size: 0.8em;
 }
 #site-header a {
 	/* Nav menu links */
-	font-family: rocketfuel;
+	font-family: Franklin Gothic Heavy;
+	font-weight: bold;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	color: white;
 	font-size: 1.5em;
 	text-decoration: none;
 }
 /* NOTE: DUplicated since the reason for populating this class in page content is not obvious */
 #site-header li.current-menu-item a {
-	color: red;
-	background: white;
+	color: white;
+	background: black;
 	padding: 10px;
 	border-radius: 8px;
+	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 	min-width: 100px;
 }
 #site-header h2 {
-	font-family: rocketfuel;
+	font-family: Franklin Gothic Heavy;
+	font-weight: bold;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	color: white;
 }
 #site-header .site-title  a {
@@ -170,17 +180,17 @@ body.page:not(.timetable) article {
 }
 #site-content .entry-header .entry-header-inner h2 {
 	/* Content page titles in feed */
-	font-family: hussar;
+	font-family: hussar
 	font-size: 30px;
 }
 #site-content nav a {
-	font-family: hussar;
+	font-family: hussar
 	color: black;
 	text-decoration: none;
 }
 
 /* Breadtext, writing etc. */
-#site-content .entry-content p, cite, a, li {
+#site-content .entry-content p, cite, a, li, td {
 	font-family: hussar;
 	font-size: 1em;
 	color: black;
@@ -189,13 +199,18 @@ body.page:not(.timetable) article {
 a {
 	text-decoration: none;
 }
+.wp-block-quote p, .wp-block-quote cite {
+	font-family: hussar;
+	font-size: 0.8em;
+	color: gray;
+}
 a.button {
 	/* Link buttons */
 	background-color: red;
 	color: white;
 	border: none;
 	text-align: center;
-	font-family: applestorm;
+	font-family: hussar
 }
 hr.post-separator {
 	margin-top: 50px;
@@ -210,19 +225,25 @@ ul li a {
 	color: white;
 }
 ul li.current-menu-item > a {
-	color: red;
-	background: white;
+	color: white;
+	background: black;
+	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 	padding: 10px;
 	border-radius: 8px;
 	min-width: 100px;
 }
 ul li.current-page-item > a {
-	color: red;
-	background: white;
+	color: white;
+	background: black;
 	padding: 10px;
 	border-radius: 8px;
 	min-width: 100px;
+	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 }
+.wp-block-table table tbody tr td {
+	border-color: black;
+}
+
  /* Remove the // from the separator */
 hr.post-separator:before {
 	background: none;
@@ -266,6 +287,7 @@ hr.post-separator:after {
 		width: 50%;
 		margin: 0 auto;
 		overflow: visible;
+		min-height: 700px; /* Fixes a bug with carousel arrows overlapping with article list */
 	}
 	#site-header .sp-widget-post-slider-section .widget-post-slider img {
 		width: auto;
@@ -370,9 +392,18 @@ hr.post-separator:after {
 		background-color: red;
 		min-height: 750px;
 		color: white;
+		width: 30%;
 	}
 	body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu ul {
 		margin-top: 8rem;
+	}
+	body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu ul li a{
+		font-family: Franklin Gothic Heavy;
+		font-weight: bold;
+		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	}
+	body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu ul li.current-menu-item a {
+		text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 	}
 	body.page:not(.timetable) #site-content article .post-inner {
 		display: table-cell;
@@ -392,9 +423,9 @@ hr.post-separator:after {
 		padding-right: 50px;
 	}
 	/* Timetable page header */
-	body.page.timetable .entry-header h1.entry-title {
-		font-family: applestorm;
-		font-size: 1.2em;
+	body.page.timetable #site-content article header.entry-header h1.entry-title {
+		font-family: hussar;
+		font-size: 3em;
 		color: red;
 	}
 	/* Timetable page background image */
@@ -564,10 +595,10 @@ hr.post-separator:after {
 		background-color: red;
 	}
 	#site-content .section-inner.section-single-page-sidebar-menu ul > li.current-menu-item {
-		background-color: white;
+		background-color: black;
 	}
 	#site-content .section-inner.section-single-page-sidebar-menu ul > li.current-menu-item a {
-		color: red;
+		color: white;
 	}
 	#site-content .section-inner.section-single-page-sidebar-menu ul > li a {
 		background: none;
