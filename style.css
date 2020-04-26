@@ -75,6 +75,12 @@ span {
 body {
 	background-color: white !important;
 }
+body.timetable {
+	display: block;
+}
+body.timetable #site-content {
+	display: block;
+}
 body.custom-background {
 	background-color: white !important;
 }
@@ -180,7 +186,7 @@ body.page:not(.timetable) article {
 }
 #site-content .entry-header .entry-header-inner h2 {
 	/* Content page titles in feed */
-	font-family: hussar
+	font-family: hussar;
 	font-size: 30px;
 }
 #site-content nav a {
@@ -430,7 +436,7 @@ hr.post-separator:after {
 	}
 	/* Timetable page background image */
 	body.page.timetable main {
-		/* TODO: This is bound to be wrong */
+		display: block;
 		background-image: url('assets/images/ohjelma_background.JPG');
 		background-size: cover;
 	}
