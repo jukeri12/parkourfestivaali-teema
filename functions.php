@@ -34,7 +34,7 @@ function parkour_festivaali_enqueue_styles() {
 	wp_enqueue_script("slick_carousel", "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js");
 }
 // Emergency fix since image sizes are not working in carousel in production...
-add_image_size( 'wps_thumbnail_size', 875, 700, true);
+add_image_size( 'wps_thumbnail_size', 1000, 1000, true);
 function remove_useless_controls() {
     global $wp_customize;
     // TODO: Check these if we want to re-enable some modified customization

@@ -293,7 +293,6 @@ hr.post-separator:after {
 		width: 50%;
 		margin: 0 auto;
 		overflow: visible;
-		min-height: 700px; /* Fixes a bug with carousel arrows overlapping with article list */
 	}
 	#site-header .sp-widget-post-slider-section .widget-post-slider img {
 		width: 100%;  /* Carousel script seems to change size dynamically */
