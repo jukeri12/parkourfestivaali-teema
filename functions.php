@@ -33,6 +33,8 @@ function parkour_festivaali_enqueue_styles() {
 	// This fixes an issue with post slider carousel - TODO: Check if we can include this in repo
 	wp_enqueue_script("slick_carousel", "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js");
 }
+// Emergency fix since image sizes are not working in carousel in production...
+add_image_size( 'wps_thumbnail_size', 875, 700, true);
 function remove_useless_controls() {
     global $wp_customize;
     // TODO: Check these if we want to re-enable some modified customization

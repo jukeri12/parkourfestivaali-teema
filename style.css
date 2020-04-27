@@ -296,10 +296,10 @@ hr.post-separator:after {
 		min-height: 700px; /* Fixes a bug with carousel arrows overlapping with article list */
 	}
 	#site-header .sp-widget-post-slider-section .widget-post-slider img {
-		width: auto;
+		width: 100%;  /* Carousel script seems to change size dynamically */
 		height: auto;
 		max-height: 700px;
-		max-width: 1920px;
+		max-width: 100%;
 		background-size: contain;
 	}
 	#site-header .sp-widget-post-slider-section .slick-arrow {
