@@ -16,17 +16,10 @@
 /* FONTS BOF */
 @font-face {
 	font-family: hussar;
-	src: url('https://www.sivistymattomat.fi/wp-content/themes/twentytwenty-child/assets/fonts/hussar-szturm-font/hussarSzturmAlxg.otf');
+	src: url('https://www.sivistymattomat.fi/wp-content/themes/twentytwenty-child/assets/fonts/hussar-szturm-font/HussarSzturmAlxg.otf');
+	/*src: 'assets/fonts/hussar-szturm-font/HussarSzturmAlxg.otf';*/  /* TODO: Check whether this format actually works */
 }
-@font-face {
-	font-family: rocketfuel;
-	src: url('https://www.sivistymattomat.fi/wp-content/themes/twentytwenty-child/assets/fonts/rocketfuel-font/Rocketfuel-mD2P.otf');
-}
-@font-face {
-	font-family: applestorm;
-	src: url('https://www.sivistymattomat.fi/wp-content/themes/twentytwenty-child/assets/fonts/applestorm-font/ApplestormExtraBold-XRV2.otf');
-	font-weight: bold;
-}
+
 /* FONTS EOF */
 
 
