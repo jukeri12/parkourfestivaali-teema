@@ -16,15 +16,15 @@
 /* FONTS BOF */
 @font-face {
 	font-family: Courier New;
-	src: 'assets/fonts/Courier New-szturm-font/Courier NewSzturmAlxg.otf';
+	src: url('https://www.sivistymattomat.fi/wp-content/themes/twentytwenty-child/assets/fonts/Courier New-szturm-font/Courier NewSzturmAlxg.otf');
 }
 @font-face {
 	font-family: rocketfuel;
-	src: 'assets/fonts/rocketfuel-font/Rocketfuel-mD2P.otf';
+	src: url('https://www.sivistymattomat.fi/wp-content/themes/twentytwenty-child/assets/fonts/rocketfuel-font/Rocketfuel-mD2P.otf');
 }
 @font-face {
 	font-family: applestorm;
-	src: 'assets/fonts/applestorm-font/ApplestormExtraBold-XRV2.otf';
+	src: url('https://www.sivistymattomat.fi/wp-content/themes/twentytwenty-child/assets/fonts/applestorm-font/ApplestormExtraBold-XRV2.otf');
 	font-weight: bold;
 }
 /* FONTS EOF */
