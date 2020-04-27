@@ -15,8 +15,8 @@
 
 /* FONTS BOF */
 @font-face {
-	font-family: hussar;
-	src: 'assets/fonts/hussar-szturm-font/HussarSzturmAlxg.otf';
+	font-family: Courier New;
+	src: 'assets/fonts/Courier New-szturm-font/Courier NewSzturmAlxg.otf';
 }
 @font-face {
 	font-family: rocketfuel;
@@ -38,7 +38,7 @@ span {
 	color: black;
 }
 .widget_text p {
-	font-family: hussar;
+	font-family: Courier New;
 }
 /* TEXT BASE EOF */
 
@@ -169,14 +169,14 @@ body.page:not(.timetable) article {
 }
 /* Default fonts */
 #site-content a {
-	font-family: hussar;
+	font-family: Courier New;
 }
 #site-content p {
-	font-family: hussar;
+	font-family: Courier New;
 }
 /* Content page titles */
 #site-content header h1 {
-	font-family: hussar;
+	font-family: Courier New;
 	font-size: 30px;
 	text-decoration: underline;
 	text-decoration-thickness: 4px;
@@ -186,18 +186,18 @@ body.page:not(.timetable) article {
 }
 #site-content .entry-header .entry-header-inner h2 {
 	/* Content page titles in feed */
-	font-family: hussar;
+	font-family: Courier New;
 	font-size: 30px;
 }
 #site-content nav a {
-	font-family: hussar
+	font-family: Courier New
 	color: black;
 	text-decoration: none;
 }
 
 /* Breadtext, writing etc. */
 #site-content .entry-content p, cite, a, li, td {
-	font-family: hussar;
+	font-family: Courier New;
 	font-size: 1em;
 	color: black;
 }
@@ -206,7 +206,7 @@ a {
 	text-decoration: none;
 }
 .wp-block-quote p, .wp-block-quote cite {
-	font-family: hussar;
+	font-family: Courier New;
 	font-size: 0.8em;
 	color: gray;
 }
@@ -216,7 +216,7 @@ a.button {
 	color: white;
 	border: none;
 	text-align: center;
-	font-family: hussar
+	font-family: Courier New
 }
 hr.post-separator {
 	margin-top: 50px;
@@ -264,7 +264,7 @@ hr.post-separator:after {
 	color: white;
 }
 #site-content .entry-content .wp-block-button a {
-	font-family: hussar;
+	font-family: Courier New;
 	color: white;
 	text-decoration: none;
 	background-color: red;
@@ -273,7 +273,7 @@ hr.post-separator:after {
 	max-width: 80% !important;
 }
 #site-content .entry-content .collapseomatic {
-	font-family: hussar;
+	font-family: Courier New;
 	color: red;
 	background-color: white;
 	border-radius: 8px;
@@ -430,7 +430,7 @@ hr.post-separator:after {
 	}
 	/* Timetable page header */
 	body.page.timetable #site-content article header.entry-header h1.entry-title {
-		font-family: hussar;
+		font-family: Courier New;
 		font-size: 3em;
 		color: red;
 	}
@@ -489,7 +489,7 @@ hr.post-separator:after {
 	}
 	body .menu-modal a {
 		color: white;
-		font-family: hussar;
+		font-family: Courier New;
 	}
 	body .menu-modal .modal-menu li.current-menu-item > .ancestor-wrapper > a {
 		color: red;
