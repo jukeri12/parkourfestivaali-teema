@@ -80,24 +80,7 @@ body.custom-background {
 body:not(.timetable) article {
 	background-color: white !important;
 }
-/* Fixes for single page heights */
-html {
-	/* Better to have site which scales properly even on non-content pages */
-	min-height: 100%;
-	height: 100%;
-}
-body.page:not(.timetable) {
-	height: 100%;
-	min-height: 100%;
-}
-body.page:not(.timetable) main {
-	height: 100%;
-	min-height: 100%;
-}
-body.page:not(.timetable) article {
-	height: 100%;
-	min-height: 100%;
-}
+/* TODO: Need a robust way of fixing single page minimum heights... */
 /* GENERIC LAYOUT EOF */
 
 
@@ -388,7 +371,6 @@ hr.post-separator:after {
 	body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu {
 		display: table-cell;
 		background-color: red;
-		min-height: 750px;
 		color: white;
 		width: 30%;
 	}
@@ -500,6 +482,7 @@ hr.post-separator:after {
 	#site-header .header-inner button.toggle {
 		max-height: 120px;
 		padding: 0;
+		padding-bottom: 30px;
 	}
 	#site-header .header-inner button.toggle span.toggle-icon {
 		height: 4rem;
