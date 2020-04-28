@@ -3,8 +3,8 @@
  * Displays the next and previous post navigation in single posts.
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Sivistymattomat_Festival
+ * @since Sivistymattomat_Festival 0.1.0
  */
 
 $next_post = get_next_post();

@@ -3,8 +3,8 @@
  * Displays the menu icon and modal
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Sivistymattomat_Festival
+ * @since Sivistymattomat_festival 0.1.0
  */
 
 ?>
