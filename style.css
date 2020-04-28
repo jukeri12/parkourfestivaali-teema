@@ -211,6 +211,14 @@ ul li a {
 	font-size: 24px;
 	color: white;
 }
+body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu ul li a{
+	font-family: Franklin Gothic Heavy;
+	font-weight: bold;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu ul li.current-menu-item a {
+	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
 ul li.current-menu-item > a {
 	color: white;
 	background: black;
@@ -382,14 +390,6 @@ hr.post-separator:after {
 	body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu ul {
 		margin-top: 8rem;
 	}
-	body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu ul li a{
-		font-family: Franklin Gothic Heavy;
-		font-weight: bold;
-		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-	}
-	body.page:not(.timetable) #site-content article .section-single-page-sidebar-menu ul li.current-menu-item a {
-		text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
-	}
 	body.page:not(.timetable) #site-content article .post-inner {
 		display: table-cell;
 		padding-left: 6rem;
@@ -468,12 +468,15 @@ hr.post-separator:after {
 	}
 	body .menu-modal a {
 		color: white;
-		font-family: hussar;
+		font-family: Franklin Gothic Heavy;
+		font-weight: bold;
+		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	}
 	body .menu-modal .modal-menu li.current-menu-item > .ancestor-wrapper > a {
-		color: red;
+		color: white;
 		text-decoration: none;
-		background-color: white;
+		background-color: black;
+		text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 	}
 	body .menu-modal a:hover {
 		text-decoration: none;
@@ -588,6 +591,9 @@ hr.post-separator:after {
 	}
 	#site-content .section-inner.section-single-page-sidebar-menu ul > li a {
 		background: none;
+		font-family: Franklin Gothic Heavy;
+		font-weight: bold;
+		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	}
 	/* MOBILE SIDEBAR MENU EOF */
 }
