@@ -10,8 +10,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Sivistymattomat_Festival
+ * @since Sivistymattomat_Festival 0.1.0
  */
 
 get_header();

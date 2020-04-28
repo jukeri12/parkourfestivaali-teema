@@ -1,11 +1,10 @@
 <?php
 /*
- * Used for Parkour-festivaali website to enqueue styles
- * as per Wordpress's child theme documentation
+ * Sivistymättömät-festival WP functions
  * 
  * Base is Twenty Twenty theme by Wordpress.org
  * Licensed as GPL 2.0
- * 
+ * Version 0.7.0
  */
 
 /* Filters and actions */
@@ -13,8 +12,6 @@ add_action( 'wp_enqueue_scripts', 'parkour_festivaali_enqueue_styles' );
 add_action( 'widgets_init', 'parkour_festivaali_widgets_init');
 add_action( 'init', 'parkour_festivaali_menus_init' );
 add_action( 'init', 'disable_search');
-// add_action( 'customize_controls_enqueue_scripts', 'twentytwenty_child_customize_controls_enqueue_scripts', 20 );
-// add_action( 'customize_preview_init', 'twentytwenty_child_customize_preview_init', 20 );
 add_action( 'customize_register', 'remove_useless_controls', 20 );
 add_filter( 'comments_open', 'disable_comments' );
 add_filter( 'allow_post_meta', 'disable_post_meta' );

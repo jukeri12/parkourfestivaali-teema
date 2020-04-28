@@ -5,8 +5,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Sivistymattomat_Festival
+ * @since Sivistymattomat_Festival 0.1.0
  */
 
 ?><!DOCTYPE html>

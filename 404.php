@@ -1,10 +1,11 @@
 <?php
 /**
  * The template for displaying the 404 template in the Twenty Twenty theme.
+ * Modified for Sivistymättömät-festival purposes (removed search for example)
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Sivistymattomat_Festival
+ * @since Sivistymattomat_Festival 0.7.0
  */
 
 get_header();
