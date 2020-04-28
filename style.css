@@ -39,11 +39,11 @@ span {
 /* FOOTER BOF */
 .footer-nav-widgets-wrapper.header-footer-group {
 	background-color: #333;
-	height: 170px;
+	min-height: 170px;
 	margin-top: 0;
 }
 .footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner {
-	height: 170px;
+	min-height: 170px;
 	flex-align: center;
 	max-width: 80%;
 }
@@ -53,11 +53,11 @@ span {
 	text-decoration: underline;
 }
 .footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner .footer-widgets-outer-wrapper {
-	height: 170px;
+	min-height: 170px;
 	padding: 20px;
 }
 .footer-nav-widgets-wrapper.header-footer-group .footer-inner.section-inner .footer-widgets-outer-wrapper .footer-widgets-wrapper {
-	height: 170px;
+	min-height: 170px;
 	padding: 0;
 }
 .footer-nav-widgets-wrapper.header-footer-group p {
