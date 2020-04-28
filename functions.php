@@ -11,7 +11,6 @@
 add_action( 'wp_enqueue_scripts', 'parkour_festivaali_enqueue_styles' );
 add_action( 'widgets_init', 'parkour_festivaali_widgets_init');
 add_action( 'init', 'parkour_festivaali_menus_init' );
-add_action( 'init', 'disable_search');
 add_action( 'customize_register', 'remove_useless_controls', 20 );
 add_filter( 'comments_open', 'disable_comments' );
 add_filter( 'allow_post_meta', 'disable_post_meta' );
@@ -35,13 +34,14 @@ add_image_size( 'wps_thumbnail_size', 1000, 1000, true);
 function remove_useless_controls() {
     global $wp_customize;
     // TODO: Check these if we want to re-enable some modified customization
-    // $wp_customize->remove_section( 'options' );
-    // $wp_customize->remove_section( 'colors' );
+    $wp_customize->remove_section( 'options' );
+    $wp_customize->remove_section( 'colors' );
     $wp_customize->remove_section( 'cover_template_options' );
     $wp_customize->remove_section( 'background_image' );
 }
 
 function parkour_festivaali_widgets_init() {
+    /* Register hero carousel widget place and third footer slot */
     register_sidebar( array(
         'name'          => 'Hero Widget Area (Visible only on front page!)',
         'id'            => 'hero-widget-area',
@@ -49,6 +49,15 @@ function parkour_festivaali_widgets_init() {
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="hero-title">',
         'after_title'   => '</h2>',
+    ));
+    register_sidebar( array(
+        'before_title'  => '<h2 class="widget-title subheading heading-size-3">',
+        'after_title'   => '</h2>',
+        'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
+        'after_widget'  => '</div></div>',
+        'name'        => __( 'Footer #3', 'twentytwenty' ),
+        'id'          => 'sidebar-3',
+        'description' => __( 'Widgets in this area will be displayed in the third column in the footer.', 'twentytwenty' ),
     ));
 }
 function parkour_festivaali_menus_init() {
@@ -66,9 +75,6 @@ function disable_comments() {
 function disable_post_meta() {
     // Disable post metadata display.
     return false;
-}
-function disable_search() {
-    set_theme_mod( 'enable_header_search', false);
 }
 function twentytwenty_child_customize_controls_enqueue_scripts() {
     return;
