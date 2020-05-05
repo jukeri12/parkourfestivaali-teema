@@ -338,6 +338,13 @@ hr.post-separator:after {
 		width: 80%;
 		margin: auto;
 	}
+	body.home.blog #site-content article .post-inner.thin {
+		width: 100%;
+		text-align: center;
+	}
+	body.home.blog #site-content article .post-inner.thin .entry-header-inner.section-inner.medium {
+		padding-bottom: 25px;
+	}
 	body.home.blog #site-content article:nth-child(4n-1) {
 		/* Reverse article list direction */
 		flex-direction: row-reverse;
