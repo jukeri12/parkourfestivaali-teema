@@ -5,7 +5,7 @@
  Author:       Jimi Heinonen
  Author URI:   -
  Template:     twentytwenty
- Version:      0.7.0
+ Version:      0.8.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, responsive-layout
@@ -150,14 +150,14 @@ body:not(.timetable) article {
 }
 /* Default fonts */
 #site-content a {
-	font-family: hussar;
+	font-family: Courier New;
 }
 #site-content p {
-	font-family: hussar;
+	font-family: Courier New;
 }
 /* Content page titles */
 #site-content header h1 {
-	font-family: hussar;
+	font-family: Courier New;
 	font-size: 30px;
 	text-decoration: underline;
 	text-decoration-thickness: 4px;
@@ -167,18 +167,18 @@ body:not(.timetable) article {
 }
 #site-content .entry-header .entry-header-inner h2 {
 	/* Content page titles in feed */
-	font-family: hussar;
+	font-family: Courier New;
 	font-size: 30px;
 }
 #site-content nav a {
-	font-family: hussar
+	font-family: Courier New
 	color: black;
 	text-decoration: none;
 }
 
 /* Breadtext, writing etc. */
 #site-content .entry-content p, cite, a, li, td {
-	font-family: hussar;
+	font-family: Courier New;
 	font-size: 1em;
 	color: black;
 }
@@ -187,7 +187,7 @@ a {
 	text-decoration: none;
 }
 .wp-block-quote p, .wp-block-quote cite {
-	font-family: hussar;
+	font-family: Courier New;
 	font-size: 0.8em;
 	color: gray;
 }
@@ -197,7 +197,7 @@ a.button {
 	color: white;
 	border: none;
 	text-align: center;
-	font-family: hussar
+	font-family: Courier New
 }
 hr.post-separator {
 	margin-top: 50px;
@@ -253,7 +253,7 @@ hr.post-separator:after {
 	color: white;
 }
 #site-content .entry-content .wp-block-button a {
-	font-family: hussar;
+	font-family: Courier New;
 	color: white;
 	text-decoration: none;
 	background-color: red;
@@ -262,7 +262,7 @@ hr.post-separator:after {
 	max-width: 80% !important;
 }
 #site-content .entry-content .collapseomatic {
-	font-family: hussar;
+	font-family: Courier New;
 	color: red;
 	background-color: white;
 	border-radius: 8px;
@@ -296,15 +296,16 @@ hr.post-separator:after {
 		width: 100px;
 	}
 	#site-header .sp-widget-post-slider-section .slick-arrow i {
-		font-size: 48rem;
+		font-size: 32rem;
 		position: relative;
-		top: 15%;
+		top: 20%;
+		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	}
 	#site-header .sp-widget-post-slider-section .slick-slide .wps-caption {
 		text-align: center;
 	}
 	#site-header .sp-widget-post-slider-section .slick-slide .wps-caption a {
-		font-size: 4.8rem;
+		font-size: 3.6rem;
 	}
 	#site-header .sp-widget-post-slider-section .slick-list {
 		overflow: visible;
@@ -316,7 +317,7 @@ hr.post-separator:after {
 		top: 30px;
 		height: 100%;
 		background: rgb(255,0,0);
-		background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.46680679107580536) 50%, rgba(0,212,255,0) 100%);
+		background: linear-gradient(90deg, rgba(255,255,255,0.999019676229867) 0%, rgba(255,255,255,0.5032213569021359) 25%, rgba(255,255,255,0) 100%);
 	}
 	#site-header .sp-widget-post-slider-section .slick-next.slick-arrow {
 		right: -50%;
@@ -324,7 +325,7 @@ hr.post-separator:after {
 		height: 100%;
 		top: 30px;
 		background: rgb(255,0,0);
-		background: linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.46680679107580536) 50%, rgba(0,212,255,0) 100%);
+		background: linear-gradient(270deg, rgba(255,255,255,0.999019676229867) 0%, rgba(255,255,255,0.5032213569021359) 25%, rgba(255,255,255,0) 100%);
 	}
 
 	/* Article wrapping */
@@ -409,7 +410,7 @@ hr.post-separator:after {
 	}
 	/* Timetable page header */
 	body.page.timetable #site-content article header.entry-header h1.entry-title {
-		font-family: hussar;
+		font-family: Courier New;
 		font-size: 3em;
 		color: red;
 	}
@@ -435,6 +436,15 @@ hr.post-separator:after {
 }
 
 /* MOBILE RULES BOF */
+/* Specific size fixes */
+@media only screen and (max-width: 1400px) {
+	/* Fix carousel arrows looking weird in this specific resolution range */
+	#site-header .sp-widget-post-slider-section .slick-arrow i {
+		font-size: 24rem;
+		top: 15%;
+	}
+}
+/* TABLET AND COMMON RULES FOR MOBILE */
 @media only screen and (max-width: 1080px) {
 	/* MOBILE GENERIC COMPONENTS BOF */
 	#site-content .entry-content .collapseomatic {
@@ -442,7 +452,12 @@ hr.post-separator:after {
 		background-color: red;
 	}
 	/* MOBILE GENERIC COMPONENTS EOF */
-
+	body.home.blog #site-content article {
+		flex-direction: column;
+	}
+	#site-content .entry-content p {
+		text-align: center;
+	}
 
 	/* MOBILE NAV BOF */
 	body.home.blog #site-content article {
@@ -471,6 +486,9 @@ hr.post-separator:after {
 		font-family: Franklin Gothic Heavy;
 		font-weight: bold;
 		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	}
+	body .menu-modal .modal-menu li > .ancestor-wrapper > a {
+		padding-left: 20px;
 	}
 	body .menu-modal .modal-menu li.current-menu-item > .ancestor-wrapper > a {
 		color: white;
@@ -514,9 +532,10 @@ hr.post-separator:after {
 		width: 20px;
 	}
 	#site-header .sp-widget-post-slider-section .slick-arrow i {
-		font-size: 24rem;
+		font-size: 20rem;
 		position: relative;
-		top: 25%
+		top: 25%;
+		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	}
 	#site-header .sp-widget-post-slider-section .slick-slide .wps-caption {
 		text-align: center;
@@ -526,7 +545,7 @@ hr.post-separator:after {
 		width: 100%
 	}
 	#site-header .sp-widget-post-slider-section .slick-slide .wps-caption a {
-		font-size: 2.4rem;
+		font-size: 3.6rem;
 	}
 	#site-header .sp-widget-post-slider-section .slick-list {
 		overflow: visible;
@@ -537,14 +556,14 @@ hr.post-separator:after {
 		top: 30px;
 		height: 100%;
 		background: rgb(255,0,0);
-		background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.46680679107580536) 50%, rgba(0,212,255,0) 100%);
+		background: linear-gradient(90deg, rgba(255,255,255,0.999019676229867) 0%, rgba(255,255,255,0.5032213569021359) 25%, rgba(255,255,255,0) 100%);
 	}
 	#site-header .sp-widget-post-slider-section .slick-next.slick-arrow {
 		width: 20%;
 		height: 100%;
 		top: 30px;
 		background: rgb(255,0,0);
-		background: linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.46680679107580536) 50%, rgba(0,212,255,0) 100%);
+		background: linear-gradient(270deg, rgba(255,255,255,0.999019676229867) 0%, rgba(255,255,255,0.5032213569021359) 25%, rgba(255,255,255,0) 100%);
 	}
 		
 	
@@ -597,16 +616,18 @@ hr.post-separator:after {
 	}
 	/* MOBILE SIDEBAR MENU EOF */
 }
-/* MOBILE RULES EOF */
-
-
-/* TABLET RULES BOF */
-@media only screen and (max-width: 1080px) {
-	body.home.blog #site-content article {
-		flex-direction: column;
+/* PHONE SPECIFIC RULES */
+@media only screen and (max-width: 480px) {
+	#site-header .sp-widget-post-slider-section .slick-arrow i {
+		font-size: 18rem;
+		top: 7%;
 	}
-	#site-content .entry-content p {
-		text-align: center;
+	#site-header .sp-widget-post-slider-section .slick-arrow {
+		display: none !important;
+	}
+	#site-header .sp-widget-post-slider-section .slick-slide .wps-caption a {
+		font-size: 2.4rem;
 	}
 }
-/* TABLET RULES EOF */
+
+/* MOBILE RULES EOF */
