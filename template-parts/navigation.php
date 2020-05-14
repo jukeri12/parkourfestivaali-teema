@@ -1,6 +1,12 @@
 <?php
 /**
  * Displays the next and previous post navigation in single posts.
+ * 
+ * Modified to not show styled separators above and below next/previous post links.
+ * 
+ * Sivistymattomat Festival theme, Copyright 2020 Sivistymättömät workgroup
+ * Based on the Twenty Twenty WordPress default theme, Copyright 2019-2020 WordPress.org
+ * Licensed as GPL 2.0 or later
  *
  * @package WordPress
  * @subpackage Sivistymattomat_Festival

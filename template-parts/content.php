@@ -3,12 +3,18 @@
  * The default template for displaying content
  *
  * Used for both singular and index.
+ * 
+ * Modified to show a single post sidebar menu if applicable.
+ * 
+ * Sivistymattomat Festival theme modifications, Copyright 2020 Sivistymättömät workgroup
+ * Based on the Twenty Twenty WordPress default theme, Copyright 2019-2020 WordPress.org
+ * Licensed as GPL 2.0 or later
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_Child
- * @since Twenty Twenty 1.0
+ * @subpackage Sivistymattomat_Festival
+ * @since Sivistymattomat_Festival 0.7.0
  */
 
 ?>
@@ -26,8 +32,6 @@
 	
 		<?php
 		// Add sidebar menu option to single pages (not articles!)
-		// TODO: It might be stupid to have this, as we need to be able to set sidebar according to the page....
-
 		 wp_nav_menu( array( 'theme_location' => 'info-page-sidebar-menu' ) );
 
 		?>

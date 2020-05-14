@@ -1,6 +1,12 @@
 <?php
 /**
- * Displays the post header
+ * Displays the post header.
+ * 
+ * Modified to disable category links and post meta.
+ * 
+ * Sivistymattomat Festival theme modifications, Copyright 2020 Sivistymättömät workgroup
+ * Based on the Twenty Twenty WordPress default theme, Copyright 2019-2020 WordPress.org
+ * Licensed as GPL 2.0 or later
  *
  * @package WordPress
  * @subpackage Sivistymattomat_Festival

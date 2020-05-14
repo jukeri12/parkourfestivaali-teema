@@ -36,33 +36,28 @@ This is the current "working" composition of plugins for this theme.
 
 External assets
 ---------------
-Hussar Szturm font (https://fontlibrary.org/en/font/hussar-szturm) (provisional, might be removed)
-SIL Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
-slick.js -carousel script, linked from a CDN (https://kenwheeler.github.io/slick/)
-MIT License (https://opensource.org/licenses/MIT)
-TODO: This might need checking, if it actually works in production
+slick.js -carousel script, linked from a https://kenwheeler.github.io/slick/ (MIT License - https://opensource.org/licenses/MIT)
 
 
 TODOs
 -----
 
 1. Fix single page height enforcement (setting min-height does nothing, setting height causes page to break on mobile)
-2. Tone down the Hero Carousel button gradients
-3. Consider styling the Hero Carousel titles in some nicer way (they look ok for now)
-4. Evaluate a plugin to generate tabs better then style it so we don't have to define and style a new menu for timetables
-5. Fix minor bugs
+2. Consider styling the Hero Carousel titles in some nicer way (they look ok for now)
+3. Evaluate a plugin to generate tabs better then style it so we don't have to define and style a new menu for timetables
+4. Fix minor bugs
 
 Other stuff
 -----------
 
 1. In **Collapse-o-matic**, set the script insertion location to "Header" otherwise collapsed blocks won't work!
 
-License
+Copyright
 -------
 
-GPL 2.0 as the parent Wordpress theme is.
-(https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+GPL 2.0 or later as the parent Wordpress theme is.
+(See COPYING or https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 Modifications (c) 2020 Sivistymättömät
-Twenty Twenty theme is (c) 2020 Wordpress team
+Twenty Twenty theme is (c) 2019-2020 Wordpress.org

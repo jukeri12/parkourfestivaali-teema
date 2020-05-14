@@ -4,7 +4,9 @@
  * 
  * Emptied as not necessarily needed in festival's theme
  *
- * Contains the opening of the #site-footer div and all content after.
+ * Sivistymattomat Festival theme, Copyright 2020 Sivistymättömät workgroup
+ * Based on the Twenty Twenty WordPress default theme, Copyright 2019-2020 WordPress.org
+ * Licensed as GPL 2.0 or later
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *

@@ -2,8 +2,10 @@
 /*
  * Sivistymättömät-festival WP functions
  * 
- * Base is Twenty Twenty theme by Wordpress.org
- * Licensed as GPL 2.0
+ * Sivistymattomat Festival theme functions, Copyright 2020 Sivistymättömät workgroup
+ * Adds own functions to modify functionality in the parent Twenty Twenty WordPress default theme, Copyright 2019-2020 WordPress.org
+ * Licensed as GPL 2.0 or later
+ * 
  * Version 0.7.0
  */
 

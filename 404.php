@@ -1,8 +1,12 @@
 <?php
 /**
  * The template for displaying the 404 template in the Twenty Twenty theme.
- * Modified for Sivistymättömät-festival purposes (removed search for example)
- *
+ * Modified for Sivistymättömät Festival purposes (removed search for example)
+ * 
+ * Sivistymattomat Festival theme, Copyright 2020 Sivistymättömät workgroup
+ * Based on the Twenty Twenty WordPress default theme, Copyright 2019-2020 WordPress.org
+ * Licensed as GPL 2.0 or later
+ * 
  * @package WordPress
  * @subpackage Sivistymattomat_Festival
  * @since Sivistymattomat_Festival 0.7.0
