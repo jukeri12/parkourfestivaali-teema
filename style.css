@@ -13,13 +13,6 @@
 */
 
 
-/* FONTS BOF */
-@font-face {
-	font-family: hussar;
-	src: url('https://www.sivistymattomat.fi/wp-content/themes/twentytwenty-child/assets/fonts/hussar-szturm-font/HussarSzturmAlxg.otf');
-	/*src: 'assets/fonts/hussar-szturm-font/HussarSzturmAlxg.otf';*/  /* TODO: Check whether this format actually works */
-}
-
 /* FONTS EOF */
 
 
@@ -424,7 +417,6 @@ hr.post-separator:after {
 	/* Timetable page background image */
 	body.page.timetable main {
 		display: block;
-		background-image: url('assets/images/ohjelma_background.JPG');
 		background-size: cover;
 	}
 	/* Timetable text content background */
