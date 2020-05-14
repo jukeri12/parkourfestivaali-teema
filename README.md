@@ -10,8 +10,7 @@ This is a theme for Wordpress containing all the visual changes
 we need for branding our parkour-festival's website while disabling most
 theme editing functionality (as most of the team is not tech literate). It is based off the Twenty Twenty
 theme by Wordpress team. It is intended to provide easy adding of content
-into a relatively small site with minor need for especial dynamic functionality
-(mostly we need images, text and links).
+into a relatively small site with minor need for especial dynamic functionality.
 
 The codebase only contains the files that do changes to the parent theme.
 
