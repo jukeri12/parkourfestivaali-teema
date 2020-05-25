@@ -271,7 +271,6 @@ hr.post-separator:after {
 	margin-bottom: 3rem;
 }
 
-
 /* DESKTOP RULES BOF */
 @media only screen and (min-width: 1080px) {
 	/* Hero Carousel tuning */
@@ -283,7 +282,7 @@ hr.post-separator:after {
 	#site-header .sp-widget-post-slider-section .widget-post-slider img {
 		width: 100%;  /* Carousel script seems to change size dynamically */
 		height: auto;
-		max-height: 700px;
+		max-height: 1000px;
 		max-width: 100%;
 		background-size: contain;
 	}
@@ -367,6 +366,21 @@ hr.post-separator:after {
 	}
 	body.single #site-content article .post-inner {
 		padding-top: 0;
+		padding-bottom: 5rem;
+	}
+	body.single #site-content article .post-inner.thin {
+		padding-top: 0;
+		padding-bottom: 5rem;
+	}
+	body.page #site-content article .post-inner.thin {
+		padding-top: 0;
+		padding-bottom: 5rem;
+	}
+	body.single #site-content article .post-inner.thin header {
+		padding: 4rem 0;
+	}
+	body.page #site-content article .post-inner.thin header {
+		padding: 4rem 0;
 	}
 	/* Fix padding with single page navigation at bottom */
 	body.single #site-content article nav.pagination-single {
@@ -411,6 +425,11 @@ hr.post-separator:after {
 	body.page:not(.timetable) #site-content article .post-inner.thin .entry-content {
 		padding-bottom: 4rem;
 		padding-right: 50px;
+	}
+	/* Text content padding */
+	body.page:not(.timetable) #site-content article .post-inner.thin .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+		max-width: 75rem;
+		width: calc(100% - 4rem);
 	}
 	/* Timetable page header */
 	body.page.timetable #site-content article header.entry-header h1.entry-title {
@@ -579,8 +598,19 @@ hr.post-separator:after {
 	body.single #site-content article {
 		display: initial;
 	}
-	body.single #site-content article .post-inner {
+	body.single #site-content article .post-inner.thin {
 		padding-top: 0;
+		padding-bottom: 5rem;
+	}
+	body.page #site-content article .post-inner.thin {
+		padding-top: 0;
+		padding-bottom: 5rem;
+	}
+	body.single #site-content article .post-inner.thin header {
+		padding: 4rem 0;
+	}
+	body.page #site-content article .post-inner.thin header {
+		padding: 4rem 0;
 	}
 	/* Fix padding with single page navigation at bottom */
 	body.single #site-content article nav.pagination-single {
