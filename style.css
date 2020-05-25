@@ -180,7 +180,7 @@ body:not(.timetable) article {
 	color: black;
 }
 #site-content .entry-content .wp-block-quote p, cite, a, li, td {
-	text-align: initial;
+	text-align: inherit;
 }
 /* Buttons, links, generic components */
 a {
