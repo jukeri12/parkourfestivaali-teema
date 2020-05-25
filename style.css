@@ -179,6 +179,9 @@ body:not(.timetable) article {
 	font-size: 1em;
 	color: black;
 }
+#site-content .entry-content .wp-block-quote p, cite, a, li, td {
+	text-align: initial;
+}
 /* Buttons, links, generic components */
 a {
 	text-decoration: none;
@@ -187,6 +190,7 @@ a {
 	font-family: Courier New;
 	font-size: 0.8em;
 	color: gray;
+	text-align: initial;
 }
 a.button {
 	/* Link buttons */
