@@ -190,7 +190,6 @@ a {
 	font-family: Courier New;
 	font-size: 0.8em;
 	color: gray;
-	text-align: initial;
 }
 a.button {
 	/* Link buttons */
@@ -274,10 +273,15 @@ hr.post-separator:after {
 	margin-top: 2rem;
 	margin-bottom: 3rem;
 }
+/* FIx a problem with hero carousel widget area */
+#site-header .hero-widget {
+	overflow: hidden;
+}
 
 /* DESKTOP RULES BOF */
 @media only screen and (min-width: 1080px) {
 	/* Hero Carousel tuning */
+	
 	#site-header .sp-widget-post-slider-section {
 		width: 50%;
 		margin: 0 auto;
