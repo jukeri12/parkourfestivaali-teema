@@ -88,7 +88,7 @@ body:not(.timetable) article {
 
 /* NAVIGATION BOF */
 #site-header .header-inner {
-	max-height: 120px;
+	max-height: 180px;
 	background-color: red !important;
 	width: 100%;
 	max-width: 100%;
@@ -277,9 +277,25 @@ hr.post-separator:after {
 #site-header .hero-widget {
 	overflow: hidden;
 }
+/* Description text (location, time) for site */
+#site-header .site-description {
+	color: white;
+	font-family: Franklin Gothic Heavy;
+	font-weight: bold;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	padding-left: 2rem;
+}
 
 /* DESKTOP RULES BOF */
 @media only screen and (min-width: 1080px) {
+	#site-header .site-description {
+		color: white;
+		font-family: Franklin Gothic Heavy;
+		font-weight: bold;
+		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+		padding-left: 8rem;
+	}
+	
 	/* Hero Carousel tuning */
 	
 	#site-header .sp-widget-post-slider-section {
@@ -488,6 +504,14 @@ hr.post-separator:after {
 	#site-content .entry-content p {
 		text-align: center;
 	}
+	#site-header .site-description {
+		color: white;
+		font-family: Franklin Gothic Heavy;
+		font-weight: bold;
+		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+		padding-left: 8rem;
+		display: initial;
+	}
 
 	/* MOBILE NAV BOF */
 	body.home.blog #site-content article {
@@ -657,8 +681,22 @@ hr.post-separator:after {
 	}
 	/* MOBILE SIDEBAR MENU EOF */
 }
+/* FIX DESCRIPTION TEXT SPECIFIC SIZE */
+@media only screen and (max-width: 700px) {
+	#site-header .site-description {
+		padding-left: 4rem;
+	}
+}
 /* PHONE SPECIFIC RULES */
 @media only screen and (max-width: 480px) {
+	#site-header .site-description {
+		color: white;
+		font-family: Franklin Gothic Heavy;
+		font-weight: bold;
+		text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+		padding-left: 2rem;
+		display: initial;
+	}
 	#site-header .sp-widget-post-slider-section .slick-arrow i {
 		font-size: 18rem;
 		top: 7%;
