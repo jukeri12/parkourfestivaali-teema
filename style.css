@@ -246,6 +246,14 @@ hr.post-separator:before {
 hr.post-separator:after {
 	background: none;
 }
+/* Side menus */
+#site-content article .post-inner.thin ul li {
+	list-style: disc;
+	padding: 5px;
+	font-size: 18px;
+	color: black;
+}
+/* Article and post menu objects are black with a basic disc list style */
 #site-content ul li {
 	list-style: none;
 	padding: 5px;
